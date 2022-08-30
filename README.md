@@ -2,9 +2,9 @@
 
 ## Contributors
 
-- [Daniel Uboa]("https://github.com/daniuboa")
+- [Daniel Uboa](https://github.com/daniuboa)
 
-- [Leila Yesufu]("https://github.com/leilayesufu")
+- [Leila Yesufu](https://github.com/leilayesufu)
 
 ## Table of Contents
 
