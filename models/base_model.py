@@ -13,29 +13,24 @@ class BaseModel():
     Base class for all models
     """
     def __init__(self, *args, **kwargs):
-        """ instantiates a new object
-        Args:
-            *args: variable length argument list not used
-            **kwargs: (key - value) pair of attributes
         """
-        self.id = str(uuid4())
+        instatiates an object with it's
+        attributes
+        """
+        if len(kwargs) > 0:
+            for key, value in kwargs.items():
+                if key == '__class__':
+                    continue
+                if key == "created_at" or key == "updated_at":
+                    value = datetime.fromisoformat(value)
+                setattr(self, key, value)
+            return
+
+        self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
 
-        if len(kwargs) > 0:
-            for key, value in kwargs.items():
-                if key == 'created_at':
-                    self.created_at = datetime.strptime(value, '%Y-%m-%dTH:%M:%S.%f')
-
-                elif key == 'updated_at':
-                    self.updated_at = datetime.strptime(value, '%Y-%m-%dTH:%M:%S.%f')
-
-                else:
-                    if key != "__class__":
-                        setattr(self, key, value)
-
-        else:
-            models.storage.new(self)
+        models.storage.new(self)
 
     def __str__(self):
         """ Returns a string representation of the object """
