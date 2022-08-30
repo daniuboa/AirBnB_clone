@@ -12,7 +12,7 @@ class BaseModel():
     """
     Base class for all models
     """
-    def __init__(self, *args, **keargs):
+    def __init__(self, *args, **kwargs):
         """ instantiates a new object
         Args:
             *args: variable length argument list not used
