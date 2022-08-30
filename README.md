@@ -3,7 +3,13 @@
 ## Contributors
 
 - Daniel Uboa
+  <a href="https://www.github.caom/daniuboa">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge"/>
+  </a>
 - Leila Yesufu
+  <a href="https://www.github.caom/daniuboa">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github Badge"/>
+  </a>
 
 ## Table of Contents
 
