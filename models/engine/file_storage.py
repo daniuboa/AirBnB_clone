@@ -6,7 +6,7 @@ Defines a `FileStorage` class.
 import os
 import json
 from models.base_model import BaseModel
-#from models.user import User
+from models.user import User
 #from models.state import State
 #from models.city import City
 #from models.review import Review
@@ -44,11 +44,11 @@ class FileStorage():
             json.dump(
                 {k: v.to_dict() for k, v in FileStorage.__objects.items()}, f)
 
-    #def reload(self):
+    def reload(self):
         """
         deserializes the JSON file to __objects only if the JSON
         file exists; otherwise, does nothing
-        
+        """
         current_classes = {'BaseModel': BaseModel, 'User': User,
                            'Amenity': Amenity, 'City': City, 'State': State,
                            'Place': Place, 'Review': Review}
@@ -69,4 +69,4 @@ class FileStorage():
 
             FileStorage.__objects = {
                 k: current_classes[k.split('.')[0]](**v)
-                for k, v in deserialized.items()}"""
+                for k, v in deserialized.items()}
