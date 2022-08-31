@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ __init__ magic method initializes the package"""
 
-from models.engine.file_storage import FileStorage
+from models.engine import file_storage
 
-storage = FileStorage()
+storage = file_storage.FileStorage()
 storage.reload()

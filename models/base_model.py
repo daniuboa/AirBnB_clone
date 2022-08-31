@@ -1,17 +1,18 @@
 #!/usr/bin/python3
-
 """
-BaseModel that defines all common attributes/methods for other classes.
+Module: base.py
 """
-
 import models
-from uuid import uuid4
+import uuid
 from datetime import datetime
+
 
 class BaseModel():
     """
-    Base class for all models
+    Base class which defines all common
+    attributes/methods for other classes
     """
+
     def __init__(self, *args, **kwargs):
         """
         instatiates an object with it's
@@ -26,7 +27,7 @@ class BaseModel():
                 setattr(self, key, value)
             return
 
-        self.id = str(uuid4())
+        self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
 
