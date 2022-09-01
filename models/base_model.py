@@ -6,7 +6,7 @@ import models
 import uuid
 from datetime import datetime
 
-<<<<<<< HEAD
+
 class BaseModel():
     """
     Base class for all models
@@ -28,8 +28,7 @@ class BaseModel():
         self.id = str(uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
-=======
->>>>>>> f045b7031d522825eddc4573ca7fd04f339d4639
+
 
 class BaseModel():
     """
