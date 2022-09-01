@@ -6,6 +6,30 @@ import models
 import uuid
 from datetime import datetime
 
+<<<<<<< HEAD
+class BaseModel():
+    """
+    Base class for all models
+    """
+    def __init__(self, *args, **kwargs):
+        """
+        instatiates an object with it's
+        attributes
+        """
+        if len(kwargs) > 0:
+            for key, value in kwargs.items():
+                if key == '__class__':
+                    continue
+                if key == "created_at" or key == "updated_at":
+                    value = datetime.fromisoformat(value)
+                setattr(self, key, value)
+            return
+
+        self.id = str(uuid4())
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
+=======
+>>>>>>> f045b7031d522825eddc4573ca7fd04f339d4639
 
 class BaseModel():
     """
