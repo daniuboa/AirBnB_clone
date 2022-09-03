@@ -6,27 +6,24 @@
 
 - [Leila Yesufu](https://github.com/leilayesufu)
 
-## Table of Contents
+## Description
+This project is a complete web application, intergrating database storage, a backend API, and front-end interfacing in a clone of AirBnB.
 
-- [Introduction]
-- [Environment]
-- [Testing]
-- [Usage]
+This project currently only implements the backend console.
 
-## Introduction
+## Classes :cl:
+The project utilizes the following classes:
 
-The console project to build a clone of [AirBnB](https://www.airbnb.com/)
-
-The console will perfome the following tasks:
-
-- create a new object
-- retrieve an object from a file
-- do operations on objects
-- destroy an object
+|     | BaseModel | FileStorage | User | State | City | Amenity | Place | Review |
+| --- | --------- | ----------- | -----| ----- | -----| ------- | ----- | ------ |
+| **PUBLIC INSTANCE ATTRIBUTES** | `id`<br>`created_at`<br>`updated_at` | | Inherits from `BaseModel` | Inherits from `BaseModel` | Inherits from `BaseModel` | Inherits from `BaseModel` | Inherits from `BaseModel` | Inherits from `BaseModel` |
+| **PUBLIC INSTANCE METHODS** | `save`<br>`to_dict` | `all`<br>`new`<br>`save`<br>`reload` | "" | "" | "" | "" | "" | "" |
+| **PUBLIC CLASS ATTRIBUTES** | | | `email`<br>`password`<br>`first_name`<br>`last_name`| `name` | `state_id`<br>`name` | `name` | `city_id`<br>`user_id`<br>`name`<br>`description`<br>`number_rooms`<br>`number_bathrooms`<br>`max_guest`<br>`price_by_night`<br>`latitude`<br>`longitude`<br>`amenity_ids` | `place_id`<br>`user_id`<br>`text` | 
+| **PRIVATE CLASS ATTRIBUTES** | | `file_path`<br>`objects` | | | | | | |
 
 ### Storage
 
-All the classes are handled by the `Storage` engine in the `FileStorage` Class.
+All the classes are handled by the `Storage` engine in the [`FileStorage`](./models/engine/file_storage.py) Class.
 
 ## Technologies Used
 
@@ -43,8 +40,9 @@ All the classes are handled by the `Storage` engine in the `FileStorage` Class.
 All the development and testing was runned over an operating system Ubuntu 20.04 LTS using Python 3.8.3 programming language. The editors used were VIM and VSCode. Control version using Git.
 
 ### Execution
+The console can be run both interactively and no-interactively.
 
-In interactive mode
+In interactive mode, run the file `console.py` by itself:
 
 ```bash
 $ ./console.py
@@ -60,7 +58,10 @@ EOF help guit
 $
 ```
 
-In non-interactive mode
+To quit the console, enter the command `quit`, or input an EOF signal
+(`control+D`).
+
+In non-interactive mode, pipe any command(s) into an execution of file `console.py` at the command line.
 
 ```bash
 $ echo "help" | ./console.py
@@ -158,13 +159,11 @@ EOF all count create destroy help quit show update
 $
 ```
 
-### Commands
+###Console Commands
 
 > The commands are displayed in the following format
 
 - Command / usage / example with output\*
-
-- Create
 
 > _Create a new instance of a given class. The class' ID is printed and the instance is saved to the file file.json._
 
