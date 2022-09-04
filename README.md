@@ -11,7 +11,7 @@ This project is a complete web application, intergrating database storage, a bac
 
 This project currently only implements the backend console.
 
-## Classes :cl:
+## Classes
 The project utilizes the following classes:
 
 |     | BaseModel | FileStorage | User | State | City | Amenity | Place | Review |
