@@ -9,7 +9,7 @@ from models.base_model import BaseModel
 from models.engine.file_storage import FileStorage
 
 
-class TestBAse(unittest.TestCase):
+class TestBase(unittest.TestCase):
     """Test cases for the `Base` class
     """
 
