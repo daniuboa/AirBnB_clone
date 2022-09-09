@@ -3,8 +3,6 @@ header {
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
-    background-image: url(../images/hbnblogo.png);
+    background-image: url("../images/hbnblogo.png");
     background-repeat: no-repeat;
-    background-position-x: 20px;
-    float: left;
 }
