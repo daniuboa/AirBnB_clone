@@ -1,3 +1,7 @@
+/*
+ * === Filters class style ===
+ */
+
 /* Filters styles */
 .filters {
     height: 70px;
@@ -12,7 +16,7 @@
 
 .filters button {
     font-size: 18px;
-    background-color: #ff5a5f;
+    background: #ff5a5f;
     color: #FFFFFF;
     border-radius: 4px;
     height: 48px;
@@ -28,6 +32,7 @@
     cursor: pointer;
 }
 
+/* Locations and amenities style */
 .filters .locations,
 .filters .amenities {
     display: inline-block;
@@ -87,8 +92,8 @@
  .filters h3,
  .filters h4 {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
  }
 
  /* Header 2 style */
