@@ -1,5 +1,5 @@
 /* 
- * Filters class style
+ * === Filters class style ===
  */
 
 /* Filters style */
@@ -26,6 +26,5 @@
 
 /* Search button hover opacity */
 button:hover {
-    opacity: .9;
-    cursor: pointer ;
+    background-color: rgba(255, 90, 95, .9);
 }
