@@ -1,21 +1,12 @@
 footer {
-    clear: left;
+    align-items: center;
     background-color: white;
     height: 60px;
     width: 100%;
     border-top: 1px solid #CCCCCC;
-    display: grid;
-    flex-direction: column;
+    bottom: 0;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    position: fixed;
-    place-content: center;
-    inset: 0px;
-    top: unset;
+    position: absolute;
 
-}
-
-footer p {
-    color: #484848;
-    text-align: center;
 }
