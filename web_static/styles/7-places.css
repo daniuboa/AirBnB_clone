@@ -1,0 +1,35 @@
+/*
+ * === Places class style ===
+*/
+
+/* Places style */
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Header 1 style */
+.places h1 {
+    width: 100%;
+    font-size: 30px;
+    padding-left: 20%;
+    margin: 10px auto auto;
+}
+
+/* Article style */
+.places article {
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ff5a5f;
+    border-radius: 4px;
+}
+
+/* Header 2 style */
+.places h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
