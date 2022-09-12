@@ -1,0 +1,16 @@
+/*
+ * === Global style ===
+*/
+
+/* Footer style */
+footer {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+}
