@@ -110,6 +110,6 @@ article {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column-reverse;
-    background-position-x: center;
+    background-position-x: canter;
     text-align: center;
 }
